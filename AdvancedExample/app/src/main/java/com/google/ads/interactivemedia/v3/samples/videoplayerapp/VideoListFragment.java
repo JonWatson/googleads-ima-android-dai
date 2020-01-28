@@ -38,6 +38,8 @@ public class VideoListFragment extends Fragment {
 
     public VideoListItem[] getVideoListItems() {
         return new VideoListItem[] {
+                new VideoListItem("TED - .75s Pre-roll", null, null, "2503702", "WernerReich_2019X",
+                        StreamFormat.HLS, null),
             new VideoListItem("Live Video - Big Buck Bunny", "sN_IYUG8STe1ZzhIIE_ksA", null, null,
                     null, StreamFormat.HLS, null),
             new VideoListItem("VOD - Google I/O", null, null, "19463", "googleio-highlights",

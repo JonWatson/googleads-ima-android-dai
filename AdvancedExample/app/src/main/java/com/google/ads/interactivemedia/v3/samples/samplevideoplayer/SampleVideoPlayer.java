@@ -103,7 +103,7 @@ public class SampleVideoPlayer {
             drmSessionManager = createDrmSessionManager();
         }
 
-        mPlayer = ExoPlayerFactory.newSimpleInstance(new DefaultRenderersFactory(mContext),
+        mPlayer = ExoPlayerFactory.newSimpleInstance(mContext,
                 trackSelector, new DefaultLoadControl(), drmSessionManager);
         mPlayerView.setPlayer(mPlayer);
         mPlayerView.setControlDispatcher(new ControlDispatcher() {
